@@ -41,7 +41,7 @@ def get_recom(title):
     return images, titles
 
 movies = pickle.load(open('movies.pickle', 'rb'))
-cosine_sim = pickle.load(open('cosine_sim.pickle', 'rb'))
+cosine_sim = pickle.load(open('score.pickle', 'rb'))
 
 st.set_page_config(layout="wide", page_title="Movie Recommendation System")
 st.header('Kyufix')
